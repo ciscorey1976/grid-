@@ -1,0 +1,37 @@
+.app {
+    background: #f1f1f1;
+    display: grid;
+    grid-template-areas:/* definicion de areas de trabajo*/
+    "header" 
+    "contenido"
+    "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto auto;    
+}
+.header {
+    align-items: center;
+    display: flex;
+    grid-area: header;
+    padding:  2rem;
+
+}
+.menu__link{
+    color: #333333;
+    padding: .5rem 1rem;
+}
+.menu__link:hover, .menu__link:active{
+    border-bottom: 2px solid #0073e6;
+}
+
+.contenido {
+    grid-area: contenido;
+}
+
+.footer { 
+    background: #fdfdfd;
+    color: #333333;
+    grid-area: footer;
+    padding: 1rem;
+    text-align: center;
+    
+}
